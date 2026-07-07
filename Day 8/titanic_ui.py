@@ -23,3 +23,4 @@ parch = st.number_input("Enter number of parents/children aboard", min_value=0, 
 # Button to predict survival
 st.button("Predict")
 
+
