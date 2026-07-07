@@ -132,11 +132,17 @@ name = "day-8"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "numpy" },
+    { name = "pandas" },
     { name = "streamlit" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "streamlit", specifier = ">=1.59.0" }]
+requires-dist = [
+    { name = "numpy", specifier = ">=2.5.1" },
+    { name = "pandas", specifier = ">=3.0.3" },
+    { name = "streamlit", specifier = ">=1.59.0" },
+]
 
 [[package]]
 name = "gitdb"
