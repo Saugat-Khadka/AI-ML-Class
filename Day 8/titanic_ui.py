@@ -21,6 +21,9 @@ sibs = st.number_input("Enter number of siblings/spouses aboard", min_value=0, m
 parch = st.number_input("Enter number of parents/children aboard", min_value=0, max_value=10)
 
 # Button to predict survival
-st.button("Predict")
+if st.button("Predict"):
+    import requests
+
+    requests.get("http://localhost:8000")
 
 
